@@ -8,7 +8,8 @@
      `sudo apt update`
 - Step 2: Install coturn `sudo apt install coturn`
 - Step 3: Stop coturn Service Temporarily `sudo systemctl stop coturn`
-- Step 4: Enable coturn Service Open the coturn default configuration file: `sudo nano /etc/default/coturn` Find the line `TURNSERVER_ENABLED=1 and uncomment it by removing the ` 
+- Step 4: Enable coturn Service Open the coturn default configuration file: `sudo nano /etc/default/coturn`
+   Find the line `TURNSERVER_ENABLED=1 and uncomment it by removing the ` 
   Save the file and exit (press CTRL+O, then CTRL+X).
 - Step 5: Backup the Default Configuration Move the existing configuration file to create a backup: `sudo mv /etc/turnserver.conf /etc/turnserver.conf.bak`
 - Step 6: Create a New Configuration File
